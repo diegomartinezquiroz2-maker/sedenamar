@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sedemar — Registro de datos del equipo para solicitudes de soporte o mantenimiento.">
+    <title>Datos del Equipo — Sedemar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet" type="text/css">
+    <style>
+        .form-wrap {
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .form-contenedor {
+            background-color: white;
+            width: 100%;
+            max-width: 460px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+            border: 1px solid #e5e7eb;
+        }
+
+        .form-contenedor h2 {
+            text-align: center;
+            color: #1a1a2e;
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+        }
+
+        .form-contenedor label {
+            font-weight: 600;
+            display: block;
+            margin-top: 10px;
+            font-size: 0.88rem;
+            color: #333;
+        }
+
+        .form-contenedor input[type="text"],
+        .form-contenedor input[type="email"],
+        .form-contenedor input[type="password"],
+        .form-contenedor input[type="number"],
+        .form-contenedor select,
+        .form-contenedor textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-family: 'Inter', Arial, sans-serif;
+        }
+
+        .form-contenedor textarea {
+            resize: vertical;
+        }
+
+        .form-contenedor .fila {
+            display: flex;
+            gap: 12px;
+        }
+
+        .form-contenedor .campo {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .form-contenedor .opciones {
+            margin-top: 8px;
+        }
+
+        .form-contenedor .opciones div {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 6px;
+        }
+
+        .form-contenedor .opciones label {
+            display: inline;
+            font-weight: normal;
+            margin: 0;
+        }
+
+        .form-contenedor .botones {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .form-contenedor input[type="submit"],
+        .form-contenedor input[type="reset"],
+        .form-contenedor input[type="button"] {
+            background-color: #5b9fff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            font-family: 'Inter', Arial, sans-serif;
+            transition: background-color 0.2s;
+        }
+
+        .form-contenedor input[type="submit"]:hover,
+        .form-contenedor input[type="reset"]:hover,
+        .form-contenedor input[type="button"]:hover {
+            background-color: #3a7fe0;
+        }
+
+        @media (max-width: 480px) {
+            .form-contenedor .fila {
+                flex-direction: column;
+                gap: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="encabezado">
+        <h1>⚡ sedemar</h1>
+        <p>Soporte · Mantenimiento · Cursos · Ventas</p>
+    </header>
+
+    <nav id="menu">
+        <ul class="menu-principal">
+            <li><a href="index.html">Inicio</a></li>
+
+            <li class="dropdown">
+                <a href="index.html#soporte-sec">Soporte</a>
+                <ul class="submenu">
+                    <li><a href="index.html#presencial">Presencial</a></li>
+                    <li><a href="index.html#distancia">A Distancia</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="index.html#mantenimiento-sec">Mantenimiento</a>
+                <ul class="submenu">
+                    <li><a href="index.html#preventivo">Preventivo</a></li>
+                    <li><a href="index.html#correctivo">Correctivo</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="index.html#asesoria-sec">Asesoría</a>
+                <ul class="submenu">
+                    <li><a href="index.html#clases">Clases</a></li>
+                    <li><a href="index.html#cursos">Aula Virtual</a></li>
+                    <li><a href="catalogo-cursos.html">Catálogo de Cursos</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="index.html#ventas-sec">Ventas</a>
+                <ul class="submenu">
+                    <li><a href="index.html#hardware">Hardware</a></li>
+                    <li><a href="index.html#software">Software</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="index.html#nosotros-sec">Nosotros</a>
+                <ul class="submenu">
+                    <li><a href="index.html#nosotros">Quiénes somos</a></li>
+                    <li><a href="index.html#ubicacion">Ubicación</a></li>
+                    <li><a href="index.html#sucursales">Sucursales</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="#">Te Ayudamos</a>
+                <ul class="submenu">
+                    <li><a href="registro.html">Registro</a></li>
+                    <li><a href="datos-equipo.html">Datos del Equipo</a></li>
+                </ul>
+            </li>
+
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="iniciar-sesion.html">Iniciar Sesión</a></li>
+        </ul>
+    </nav>
+
+    <section class="seccion">
+        <h1>🖥️ Datos del Equipo</h1>
+        <p class="descripcion">Ayúdanos a conocer tu equipo para brindarte un mejor diagnóstico y servicio.</p>
+
+        <div class="form-wrap">
+            <div class="form-contenedor">
+                <form>
+
+                    <div class="fila">
+                        <div class="campo">
+                            <label for="marca">Marca</label>
+                            <input type="text" id="marca" placeholder="Marca">
+                        </div>
+                        <div class="campo">
+                            <label for="modelo">Modelo</label>
+                            <input type="text" id="modelo" placeholder="Modelo">
+                        </div>
+                    </div>
+
+                    <div class="fila">
+                        <div class="campo">
+                            <label for="ram">Memoria RAM</label>
+                            <input type="number" id="ram" placeholder="GB">
+                        </div>
+                        <div class="campo">
+                            <label for="procesador">Procesador</label>
+                            <input type="text" id="procesador" placeholder="Procesador">
+                        </div>
+                    </div>
+
+                    <label>Sistema Operativo</label>
+                    <div class="opciones">
+                        <div>
+                            <input type="radio" name="so" id="windows">
+                            <label for="windows">Windows</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="so" id="mac">
+                            <label for="mac">Mac</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="so" id="linux">
+                            <label for="linux">Linux</label>
+                        </div>
+                    </div>
+
+                    <label for="falla">Descripción Falla</label>
+                    <textarea id="falla" rows="4" placeholder="Describe la falla..."></textarea>
+
+                    <div class="botones">
+                        <input type="submit" value="Guardar">
+                        <input type="button" value="Salir" onclick="window.location.href='index.html'">
+                        <input type="reset" value="Limpiar">
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="seccion">
+        <div class="tarjeta-encuesta">
+            <div class="tarjeta-icono">⭐</div>
+            <h2>¡Califícanos!</h2>
+            <p>¡Hola! 👋 Gracias por tu visita o reparación en nuestro taller. Queremos saber cómo te fue con el servicio. Responde esta mini encuesta y participa por <strong>10% off</strong> en tu próxima reparación o limpieza 😎 Solo toma 30 segundos.</p>
+            <a href="https://forms.gle/C7J5gRvm6Q6RKANq7" target="_blank" rel="noopener" class="btn-catalogo">👇 Responder Encuesta</a>
+            <p class="encuesta-footer">¡Te esperamos de nuevo! 💻🔧</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Sedemar — Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

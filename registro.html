@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sedemar — Registro de usuario para solicitar soporte técnico.">
+    <title>Registro de Usuario — Sedemar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet" type="text/css">
+    <style>
+        .form-wrap {
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .form-contenedor {
+            background-color: white;
+            width: 100%;
+            max-width: 420px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+            border: 1px solid #e5e7eb;
+        }
+
+        .form-contenedor h2 {
+            text-align: center;
+            color: #1a1a2e;
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+        }
+
+        .form-contenedor label {
+            font-weight: 600;
+            display: block;
+            margin-top: 10px;
+            font-size: 0.88rem;
+            color: #333;
+        }
+
+        .form-contenedor input[type="text"],
+        .form-contenedor input[type="email"],
+        .form-contenedor input[type="password"],
+        .form-contenedor input[type="number"],
+        .form-contenedor select,
+        .form-contenedor textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-family: 'Inter', Arial, sans-serif;
+        }
+
+        .form-contenedor textarea {
+            resize: vertical;
+        }
+
+        .form-contenedor .opciones {
+            margin-top: 8px;
+        }
+
+        .form-contenedor .opciones label {
+            display: inline;
+            font-weight: normal;
+            margin-right: 12px;
+        }
+
+        .form-contenedor .botones {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .form-contenedor input[type="submit"],
+        .form-contenedor input[type="reset"] {
+            background-color: #5b9fff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            font-family: 'Inter', Arial, sans-serif;
+            transition: background-color 0.2s;
+        }
+
+        .form-contenedor input[type="submit"]:hover,
+        .form-contenedor input[type="reset"]:hover {
+            background-color: #3a7fe0;
+        }
+
+        .form-contenedor .checkbox-linea {
+            margin-top: 14px;
+        }
+
+        .form-contenedor .checkbox-linea label {
+            display: inline;
+            font-weight: normal;
+            margin-left: 6px;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="encabezado">
+        <h1>⚡ sedemar</h1>
+        <p>Soporte · Mantenimiento · Cursos · Ventas</p>
+    </header>
+
+    <nav id="menu">
+        <ul class="menu-principal">
+            <li><a href="index.html">Inicio</a></li>
+
+            <li class="dropdown">
+                <a href="index.html#soporte-sec">Soporte</a>
+                <ul class="submenu">
+                    <li><a href="index.html#presencial">Presencial</a></li>
+                    <li><a href="index.html#distancia">A Distancia</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="index.html#mantenimiento-sec">Mantenimiento</a>
+                <ul class="submenu">
+                    <li><a href="index.html#preventivo">Preventivo</a></li>
+                    <li><a href="index.html#correctivo">Correctivo</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="index.html#asesoria-sec">Asesoría</a>
+                <ul class="submenu">
+                    <li><a href="index.html#clases">Clases</a></li>
+                    <li><a href="index.html#cursos">Aula Virtual</a></li>
+                    <li><a href="catalogo-cursos.html">Catálogo de Cursos</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="index.html#ventas-sec">Ventas</a>
+                <ul class="submenu">
+                    <li><a href="index.html#hardware">Hardware</a></li>
+                    <li><a href="index.html#software">Software</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="index.html#nosotros-sec">Nosotros</a>
+                <ul class="submenu">
+                    <li><a href="index.html#nosotros">Quiénes somos</a></li>
+                    <li><a href="index.html#ubicacion">Ubicación</a></li>
+                    <li><a href="index.html#sucursales">Sucursales</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="#">Te Ayudamos</a>
+                <ul class="submenu">
+                    <li><a href="registro.html">Registro</a></li>
+                    <li><a href="datos-equipo.html">Datos del Equipo</a></li>
+                </ul>
+            </li>
+
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="iniciar-sesion.html">Iniciar Sesión</a></li>
+        </ul>
+    </nav>
+
+    <section class="seccion">
+        <h1>📝 Registro de Usuario</h1>
+        <p class="descripcion">Regístrate para que podamos darte seguimiento a tu solicitud de soporte.</p>
+
+        <div class="form-wrap">
+            <div class="form-contenedor">
+                <form>
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" placeholder="Escribe tu nombre">
+
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" placeholder="correo@ejemplo.com">
+
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password">
+
+                    <label for="edad">Edad</label>
+                    <input type="number" id="edad">
+
+                    <label>Género</label>
+                    <div class="opciones">
+                        <input type="radio" name="genero" id="hombre">
+                        <label for="hombre">Hombre</label>
+
+                        <input type="radio" name="genero" id="mujer">
+                        <label for="mujer">Mujer</label>
+
+                        <input type="radio" name="genero" id="otro">
+                        <label for="otro">Otro</label>
+                    </div>
+
+                    <label for="estado">Estado</label>
+                    <select id="estado">
+                        <option>Seleccione una opción</option>
+                        <option>Ciudad de México</option>
+                        <option>Estado de México</option>
+                        <option>Jalisco</option>
+                        <option>Nuevo León</option>
+                        <option>Puebla</option>
+                    </select>
+
+                    <label for="comentarios">Comentarios</label>
+                    <textarea id="comentarios" rows="4"></textarea>
+
+                    <div class="checkbox-linea">
+                        <input type="checkbox" id="terminos">
+                        <label for="terminos">Acepto los términos y condiciones</label>
+                    </div>
+
+                    <div class="botones">
+                        <input type="submit" value="Registrarse">
+                        <input type="reset" value="Limpiar">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="seccion">
+        <div class="tarjeta-encuesta">
+            <div class="tarjeta-icono">⭐</div>
+            <h2>¡Califícanos!</h2>
+            <p>¡Hola! 👋 Gracias por tu visita o reparación en nuestro taller. Queremos saber cómo te fue con el servicio. Responde esta mini encuesta y participa por <strong>10% off</strong> en tu próxima reparación o limpieza 😎 Solo toma 30 segundos.</p>
+            <a href="https://forms.gle/C7J5gRvm6Q6RKANq7" target="_blank" rel="noopener" class="btn-catalogo">👇 Responder Encuesta</a>
+            <p class="encuesta-footer">¡Te esperamos de nuevo! 💻🔧</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Sedemar — Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

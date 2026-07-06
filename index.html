@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sedemar — Soporte técnico, mantenimiento de computadoras, cursos de tecnología y venta de hardware y software en Coatepec Harinas.">
+    <title>Sedemar — Soporte y Tecnología</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <header id="encabezado">
+        <h1>⚡ sedemar</h1>
+        <p>Soporte · Mantenimiento · Cursos · Ventas</p>
+    </header>
+
+
+    <nav id="menu">
+        <ul class="menu-principal">
+
+            <li><a href="#">Inicio</a></li>
+
+            <li class="dropdown">
+                <a href="#soporte-sec">Soporte</a>
+                <ul class="submenu">
+                    <li><a href="#presencial">Presencial</a></li>
+                    <li><a href="#distancia">A Distancia</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="#mantenimiento-sec">Mantenimiento</a>
+                <ul class="submenu">
+                    <li><a href="#preventivo">Preventivo</a></li>
+                    <li><a href="#correctivo">Correctivo</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="#asesoria-sec">Asesoría</a>
+                <ul class="submenu">
+                    <li><a href="#clases">Clases</a></li>
+                    <li><a href="#cursos">Aula Virtual</a></li>
+                    <li><a href="catalogo-cursos.html">Catálogo de Cursos</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="#ventas-sec">Ventas</a>
+                <ul class="submenu">
+                    <li><a href="#hardware">Hardware</a></li>
+                    <li><a href="#software">Software</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="#nosotros-sec">Nosotros</a>
+                <ul class="submenu">
+                    <li><a href="#nosotros">Quiénes somos</a></li>
+                    <li><a href="#ubicacion">Ubicación</a></li>
+                    <li><a href="#redes">Redes Sociales</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="#">Te Ayudamos</a>
+                <ul class="submenu">
+                    <li><a href="registro.html">Registro</a></li>
+                    <li><a href="datos-equipo.html">Datos del Equipo</a></li>
+                </ul>
+            </li>
+
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="iniciar-sesion.html">Iniciar Sesión</a></li>
+
+        </ul>
+    </nav>
+
+
+    <div class="carrusel-contenedor">
+        <input type="radio" name="carrusel-control" id="slide-1" checked hidden>
+        <input type="radio" name="carrusel-control" id="slide-2" hidden>
+        <input type="radio" name="carrusel-control" id="slide-3" hidden>
+        <input type="radio" name="carrusel-control" id="slide-4" hidden>
+
+        <div class="carrusel" id="carrusel">
+            <div class="slide">
+                <a href="promo-soporte.html" class="slide-link">
+                    <img src="imagens/promo_soporte.png" alt="Soporte Técnico">
+                    <div class="slide-texto">
+                        <h2>Soporte Técnico</h2>
+                        <p>Diagnóstico y reparación profesional</p>
+                    </div>
+                </a>
+                <label for="slide-4" class="flecha izq">&#10094;</label>
+                <label for="slide-2" class="flecha der">&#10095;</label>
+            </div>
+
+            <div class="slide">
+                <a href="promo-mantenimiento.html" class="slide-link">
+                    <img src="imagens/promo_mantenimiento.png" alt="Mantenimiento">
+                    <div class="slide-texto">
+                        <h2>Mantenimiento</h2>
+                        <p>Mantén tu equipo al 100%</p>
+                    </div>
+                </a>
+                <label for="slide-1" class="flecha izq">&#10094;</label>
+                <label for="slide-3" class="flecha der">&#10095;</label>
+            </div>
+
+            <div class="slide">
+                <a href="promo-cursos.html" class="slide-link">
+                    <img src="imagens/promo_cursos.png" alt="Cursos">
+                    <div class="slide-texto">
+                        <h2>Cursos en Línea</h2>
+                        <p>Aprende tecnología a tu ritmo</p>
+                    </div>
+                </a>
+                <label for="slide-2" class="flecha izq">&#10094;</label>
+                <label for="slide-4" class="flecha der">&#10095;</label>
+            </div>
+
+            <div class="slide">
+                <a href="promo-ventas.html" class="slide-link">
+                    <img src="imagens/promo_ventas.png" alt="Ventas">
+                    <div class="slide-texto">
+                        <h2>Venta de Equipo</h2>
+                        <p>Hardware y software con garantía</p>
+                    </div>
+                </a>
+                <label for="slide-3" class="flecha izq">&#10094;</label>
+                <label for="slide-1" class="flecha der">&#10095;</label>
+            </div>
+        </div>
+
+        <div class="puntos">
+            <label for="slide-1" class="punto"></label>
+            <label for="slide-2" class="punto"></label>
+            <label for="slide-3" class="punto"></label>
+            <label for="slide-4" class="punto"></label>
+        </div>
+    </div>
+	
+    <section class="seccion" id="soporte-sec">
+        <h1>🛠️ Soporte</h1>
+        <p class="descripcion">Servicios técnicos para que tu computadora siempre funcione bien.</p>
+
+        <div class="tarjetas">
+
+            <div class="tarjeta" id="presencial">
+                <img class="tarjeta-img" src="imagens/soporte_presencial.png" alt="Soporte Presencial">
+                <h2>Presencial</h2>
+                <p>El técnico va directamente a donde está tu equipo para revisarlo, diagnosticarlo y repararlo. Ideal para problemas de hardware que necesitan atención física.</p>
+            </div>
+
+            <div class="tarjeta" id="distancia">
+                <img class="tarjeta-img" src="imagens/soporte_distancia.png" alt="Soporte a Distancia">
+                <h2>A Distancia</h2>
+                <p>Nos conectamos a tu computadora por internet con software de acceso remoto. Resolvemos problemas de software, configuración o virus sin necesidad de ir a tu casa.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+   
+    <section class="seccion fondo-alt" id="mantenimiento-sec">
+        <h1>🔧 Mantenimiento</h1>
+        <p class="descripcion">Cuidamos tu equipo para que dure más y funcione mejor.</p>
+
+        <div class="tarjetas">
+
+            <div class="tarjeta" id="preventivo">
+                <img class="tarjeta-img" src="imagens/mantenimiento_preventivo.png" alt="Mantenimiento Preventivo">
+                <h2>Preventivo</h2>
+                <p>Limpieza de polvo, actualización de sistema operativo y antivirus, optimización de disco y copias de seguridad. Se hace cada cierto tiempo para evitar fallas.</p>
+            </div>
+
+            <div class="tarjeta" id="correctivo">
+                <img class="tarjeta-img" src="imagens/mantenimiento_correctivo.png" alt="Mantenimiento Correctivo">
+                <h2>Correctivo</h2>
+                <p>Cuando ya tienes un problema: computadora lenta, virus, pantalla azul, fallas de hardware. Diagnosticamos y reparamos para que tu equipo vuelva a funcionar.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+   
+    <section class="seccion" id="asesoria-sec">
+        <h1>📚 Asesoría y Cursos</h1>
+        <p class="descripcion">Aprende tecnología desde cero con clases y cursos a tu ritmo.</p>
+
+        <div class="tarjetas">
+
+            <div class="tarjeta" id="clases">
+                <img class="tarjeta-img" src="imagens/clases_personalizadas.png" alt="Clases Personalizadas">
+                <h2>Clases Personalizadas</h2>
+                <p>Clases sobre computadoras, programas de oficina, internet y herramientas digitales. Para personas que quieren aprender desde cero o mejorar sus habilidades.</p>
+            </div>
+
+            <div class="tarjeta" id="cursos">
+                <img class="tarjeta-img" src="imagens/aula_virtual.png" alt="Aula Virtual">
+                <h2>Aula Virtual</h2>
+                <p>Cursos en línea a tu propio ritmo: Excel, Word, PowerPoint, Canva, Python, Redes y más.</p>
+            </div>
+
+        </div>
+
+       
+        <h2 class="subtitulo-cursos">Catálogo de Cursos</h2>
+        <div class="cursos-grid">
+
+            <div class="curso">
+                <div class="curso-icono">📊</div>
+                <h3>Excel Básico</h3>
+                <p>Aprende Excel desde cero y automatiza tu trabajo de forma rápida.</p>
+                <button>Comprar — $99 MXN</button>
+            </div>
+
+            <div class="curso">
+                <div class="curso-icono">📝</div>
+                <h3>Word</h3>
+                <p>Crea documentos profesionales en poco tiempo.</p>
+                <button>Comprar — $99 MXN</button>
+            </div>
+
+            <div class="curso">
+                <div class="curso-icono">📽️</div>
+                <h3>PowerPoint</h3>
+                <p>Presentaciones que impresionen a tu audiencia.</p>
+                <button>Comprar — $99 MXN</button>
+            </div>
+
+            <div class="curso">
+                <div class="curso-icono">🎨</div>
+                <h3>Canva</h3>
+                <p>Diseña gráficos increíbles sin tener experiencia previa.</p>
+                <button>Comprar — $99 MXN</button>
+            </div>
+
+        </div>
+
+        <div class="ver-catalogo-wrap">
+            <a href="catalogo-cursos.html" class="btn-catalogo">Ver Catálogo Completo de Cursos →</a>
+        </div>
+    </section>
+
+
+    
+    <section class="seccion fondo-alt" id="ventas-sec">
+        <h1>🛒 Ventas</h1>
+        <p class="descripcion">Componentes y programas originales con garantía.</p>
+
+        <div class="tarjetas">
+
+            <div class="tarjeta" id="software">
+                <div class="tarjeta-icono">💿</div>
+		
+                <h2>Software</h2>
+                <p>Venta e instalación de software original y licenciado: sistema operativo, antivirus, Office y más programas para tu equipo.</p>
+            </div>
+
+            <div class="tarjeta" id="hardware">
+                <div class="tarjeta-icono">🖥️</div>
+                <h2>Hardware</h2>
+                <p>Discos duros, memorias RAM, tarjetas madre, fuentes de poder, monitores, teclados y más. Todo con garantía y asesoría.</p>
+            </div>
+
+        </div>
+
+        <div class="ver-catalogo-wrap">
+            <a href="catalogo.html" class="btn-catalogo">Ver Catálogo Completo →</a>
+        </div>
+    </section>
+
+
+  
+    <section class="seccion" id="nosotros-sec">
+        <h1>Sobre Nosotros</h1>
+
+        <div class="tarjetas tres-cols">
+
+            <div class="tarjeta" id="nosotros">
+                <div class="tarjeta-icono">👥</div>
+                <h2>Quiénes Somos</h2>
+                <p>Somos una empresa dedicada al soporte técnico y venta de tecnología. Ofrecemos soluciones rápidas, confiables y de calidad, con años de experiencia.</p>
+                <a href="vision-valores.html" class="btn-catalogo btn-tarjeta">Nuestra Visión y Valores →</a>
+            </div>
+
+            <div class="tarjeta" id="ubicacion">
+                <div class="tarjeta-icono">📍</div>
+                <h2>Ubicación</h2>
+                <p>Estamos en el centro de Coatepec Harinas. Visítanos en horario de atención o contáctanos para programar tu visita.</p>
+                <div class="mapa-contenedor">
+                    <iframe
+                        src="https://www.google.com/maps?q=Centro,+Coatepec+Harinas,+Estado+de+México&output=embed"
+                        width="100%"
+                        height="280"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Mapa de Coatepec Harinas">
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="tarjeta" id="redes">
+                <div class="tarjeta-icono">🌐</div>
+                <h2>Redes Sociales</h2>
+                <p>Síguenos y mantente al tanto de nuestras promociones y novedades.</p>
+                <div class="redes-iconos">
+                    <a href="https://www.facebook.com/share/18h1Y7NTkq/" target="_blank" rel="noopener"><img src="imagens/social_media_logo_facbook_icon-icons.com_73736.ico" alt="imagens/social_media_logo_facbook_icon-icons.com_73736.ico"></a>
+                    <a href="https://www.instagram.com/_tecnocat_?igsh=ZTFnb2pzYTV1MmM4" target="_blank" rel="noopener"><img src="imagens/ig.ico.ico" alt="ig.ico"></a>
+                    <a href="https://wa.me/5217299923153" target="_blank" rel="noopener"><img src="imagens/whatsapp-logo_icon-icons.com_57054.ico" alt="imagens/whatsapp-logo_icon-icons.com_57054.ico" ></a>
+                    <a href="https://www.tiktok.com/@__tecnocat_?_r=1&_t=ZS-97StlrDFvDI" target="_blank" rel="noopener"><img src="imagens/tiktok_logo_icon_186928.ico" alt="imagens/tiktok_logo_icon_186928.ico"></a>
+                    <a href="https://youtube.com/@tecnocat-10?si=jeOS-Mc5p8Jfr2y1" target="_blank" rel="noopener"><img src="imagens/youtube_black_logo_icon_147044.ico" alt="imagens/youtube_black_logo_icon_147044.ico"></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    
+    <section class="seccion">
+        <div class="tarjeta-encuesta">
+            <div class="tarjeta-icono">⭐</div>
+            <h2>¡Califícanos!</h2>
+            <p>¡Hola! 👋 Gracias por tu visita o reparación en nuestro taller. Queremos saber cómo te fue con el servicio. Responde esta mini encuesta y participa por <strong>10% off</strong> en tu próxima reparación o limpieza 😎 Solo toma 30 segundos.</p>
+            <a href="https://forms.gle/C7J5gRvm6Q6RKANq7" target="_blank" rel="noopener" class="btn-catalogo">👇 Responder Encuesta</a>
+            <p class="encuesta-footer">¡Te esperamos de nuevo! 💻🔧</p>
+        </div>
+    </section>
+
+    <footer>
+        <p></p>
+    </footer>
+
+
+</body>
+</html>
